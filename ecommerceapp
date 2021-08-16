@@ -1,0 +1,5 @@
+# KEYOSEF
+
+    -- Dependencias
+    
+        npm install -g ionic@3.19.0 cordova@7.1.0

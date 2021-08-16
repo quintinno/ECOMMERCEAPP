@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title style="text-align: center;">KEYOSEFAPP</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <button ion-item *ngFor="let categoriaProduto of categoriaProdutoList">
+      <ion-thumbnail item-start>
+        <img src="data:image/jpg;base64,{{categoriaProduto.imagem}}" />
+      </ion-thumbnail>
+      <h2>{{ categoriaProduto.descricao }}</h2>
+    </button>
+  </ion-list>
+
+</ion-content>
